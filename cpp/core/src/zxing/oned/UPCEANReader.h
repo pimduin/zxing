@@ -52,14 +52,11 @@ protected:
   static const std::vector<int> MIDDLE_PATTERN;
 
   static const std::vector<int const*> L_PATTERNS;
-  static const std::vector<int const*> L_AND_G_PATTERNS;
 
-  static Range findGuardPattern(Ref<BitArray> row,
-                                int rowOffset,
-                                bool whiteFirst,
-                                std::vector<int> const& pattern);
 
 public:
+  static const std::vector<int const*> L_AND_G_PATTERNS;
+  
   UPCEANReader();
 
   virtual int decodeMiddle(Ref<BitArray> row,
@@ -78,6 +75,11 @@ public:
 
   virtual BarcodeFormat getBarcodeFormat() = 0;
   virtual ~UPCEANReader();
+  
+  static Range findGuardPattern(Ref<BitArray> row,
+                                int rowOffset,
+                                bool whiteFirst,
+                                std::vector<int> const& pattern);
 
   friend class MultiFormatUPCEANReader;
 };
