@@ -21,6 +21,7 @@
 #include <zxing/ZXing.h>
 #include <zxing/oned/UPCEANReader.h>
 #include <zxing/oned/OneDResultPoint.h>
+#include <zxing/oned/UPCEANExtensionSupport.h>
 #include <zxing/ReaderException.h>
 #include <zxing/NotFoundException.h>
 #include <zxing/ChecksumException.h>
@@ -33,6 +34,7 @@ using zxing::Result;
 using zxing::NotFoundException;
 using zxing::ChecksumException;
 using zxing::oned::UPCEANReader;
+using zxing::oned::UPCEANExtensionSupport;
 
 // VC++
 using zxing::BitArray;
@@ -114,7 +116,11 @@ UPCEANReader::L_PATTERNS (VECTOR_INIT(L_PATTERNS_));
 const vector<int const*>
 UPCEANReader::L_AND_G_PATTERNS (VECTOR_INIT(L_AND_G_PATTERNS_));
 
-UPCEANReader::UPCEANReader() {}
+UPCEANExtensionSupport *extensionReader;
+
+UPCEANReader::UPCEANReader() {
+	extensionReader = new UPCEANExtensionSupport::UPCEANExtensionSupport();
+}
 
 Ref<Result> UPCEANReader::decodeRow(int rowNumber, Ref<BitArray> row) {
   return decodeRow(rowNumber, row, findStartGuardPattern(row));
@@ -151,6 +157,17 @@ Ref<Result> UPCEANReader::decodeRow(int rowNumber,
   resultPoints[1] = Ref<ResultPoint>(new OneDResultPoint(right, (float) rowNumber));
   Ref<Result> decodeResult (new Result(resultString, ArrayRef<char>(), resultPoints, format));
   // Java extension and man stuff
+  try {
+		Ref<Result> extensionResult = extensionReader->decodeRow(rowNumber, row, endRange[1], row->getSize());
+		if (extensionResult) {
+			Ref<Result> newResult (new Result(decodeResult->getText(), decodeResult->getRawBytes(), decodeResult->getResultPoints(), decodeResult->getBarcodeFormat(), extensionResult));
+			return newResult;
+		}
+	} catch (NotFoundException exception) {
+	} catch (...) {
+		// ouch...
+    // TODO: properly catch whichever exception is breaking successful extension reading
+	}
   return decodeResult;
 }
 
@@ -299,4 +316,5 @@ bool UPCEANReader::checkStandardUPCEANChecksum(Ref<String> const& s_) {
 }
 
 UPCEANReader::~UPCEANReader() {
+  delete extensionReader;
 }
