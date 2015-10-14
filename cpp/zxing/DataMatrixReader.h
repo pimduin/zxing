@@ -1,10 +1,12 @@
-// -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
+#ifndef __DATA_MATRIX_READER_H__
+#define __DATA_MATRIX_READER_H__
 
 /*
- * Copyright 20011 ZXing authors
+ *  DataMatrixReader.h
+ *  zxing
+ *
+ *  Created by Luiz Silva on 09/02/2010.
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +21,25 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
+#include <zxing/Reader.h>
+#include <zxing/DecodeHints.h>
+#include <zxing/datamatrix/decoder/Decoder.h>
 
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
+namespace datamatrix {
+
+class DataMatrixReader : public Reader {
+private:
+  Decoder decoder_;
+
+public:
+  DataMatrixReader();
+  virtual Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints);
+  virtual ~DataMatrixReader();
+
+};
+
+}
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif // __DATA_MATRIX_READER_H__

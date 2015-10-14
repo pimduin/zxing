@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65c4af00-8348-457c-9028-2d2e13762e70" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/AlignmentPattern.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/AlignmentPatternFinder.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Array.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/AztecDetectorResult.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/AztecReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BarcodeFormat.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BigInteger.hh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BigIntegerAlgorithms.hh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BigIntegerLibrary.hh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BigIntegerUtils.hh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BigUnsigned.hh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BigUnsignedInABase.hh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Binarizer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BinaryBitmap.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BitArray.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BitMatrix.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BitMatrixParser.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/BitSource.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ByQuadrantReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/CharacterSetECI.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ChecksumException.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/CodaBarReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Code128Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Code39Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Code93Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/CornerPoint.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Counted.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/DataBlock.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/DataMask.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/DataMatrixReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/DecodeHints.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/DecodedBitStreamParser.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Decoder.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/DecoderResult.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Detector.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/DetectorException.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/DetectorResult.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/EAN13Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/EAN8Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ErrorCorrection.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ErrorCorrectionLevel.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Exception.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/FinderPattern.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/FinderPatternFinder.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/FinderPatternInfo.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/FormatException.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/FormatInformation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/GenericGF.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/GenericGFPoly.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/GenericMultipleBarcodeReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/GlobalHistogramBinarizer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/GreyscaleLuminanceSource.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/GreyscaleRotatedLuminanceSource.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/GridSampler.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/HybridBinarizer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ITFReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/IllegalArgumentException.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/LinesSampler.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/LuminanceSource.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Mode.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ModulusGF.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ModulusPoly.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/MonochromeRectangleDetector.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/MultiDetector.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/MultiFinderPatternFinder.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/MultiFormatOneDReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/MultiFormatReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/MultiFormatUPCEANReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/MultipleBarcodeReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/NotFoundException.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/NumberlikeArray.hh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/OneDReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/OneDResultPoint.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/PDF417Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/PerspectiveTransform.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Point.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/QRCodeMultiReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/QRCodeReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ReaderException.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ReedSolomonDecoder.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ReedSolomonException.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Result.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ResultPoint.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/ResultPointCallback.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Str.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/StringUtils.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/UPCAReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/UPCEANExtension2Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/UPCEANExtension5Reader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/UPCEANExtensionSupport.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/UPCEANReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/UPCEReader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/Version.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cpp/zxing/WhiteRectangleDetector.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cpp/core/src/zxing/ChecksumException.h" afterPath="$PROJECT_DIR$/../cpp/core/src/zxing/ChecksumException.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANExtension2Reader.cpp" afterPath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANExtension2Reader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANExtension5Reader.cpp" afterPath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANExtension5Reader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANExtensionSupport.cpp" afterPath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANExtensionSupport.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANExtensionSupport.h" afterPath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANExtensionSupport.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANReader.cpp" afterPath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANReader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANReader.h" afterPath="$PROJECT_DIR$/../cpp/core/src/zxing/oned/UPCEANReader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cpp/zxing-cpp.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../cpp/zxing-cpp.xcodeproj/project.pbxproj" />
+    </list>
+    <ignored path="core.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="core" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="tasksExpandState">
+      <map>
+        <entry key="" value="true" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="core" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="core" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="core" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/gradle-1.10/src/announce" />
+                  <option value="$USER_HOME$/gradle-1.10/src/antlr" />
+                  <option value="$USER_HOME$/gradle-1.10/src/base-services" />
+                  <option value="$USER_HOME$/gradle-1.10/src/base-services-groovy" />
+                  <option value="$USER_HOME$/gradle-1.10/src/build-comparison" />
+                  <option value="$USER_HOME$/gradle-1.10/src/build-init" />
+                  <option value="$USER_HOME$/gradle-1.10/src/cli" />
+                  <option value="$USER_HOME$/gradle-1.10/src/code-quality" />
+                  <option value="$USER_HOME$/gradle-1.10/src/core" />
+                  <option value="$USER_HOME$/gradle-1.10/src/core-impl" />
+                  <option value="$USER_HOME$/gradle-1.10/src/cpp" />
+                  <option value="$USER_HOME$/gradle-1.10/src/diagnostics" />
+                  <option value="$USER_HOME$/gradle-1.10/src/ear" />
+                  <option value="$USER_HOME$/gradle-1.10/src/ide" />
+                  <option value="$USER_HOME$/gradle-1.10/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/gradle-1.10/src/internal-testing" />
+                  <option value="$USER_HOME$/gradle-1.10/src/ivy" />
+                  <option value="$USER_HOME$/gradle-1.10/src/jacoco" />
+                  <option value="$USER_HOME$/gradle-1.10/src/javascript" />
+                  <option value="$USER_HOME$/gradle-1.10/src/jetty" />
+                  <option value="$USER_HOME$/gradle-1.10/src/language-base" />
+                  <option value="$USER_HOME$/gradle-1.10/src/language-jvm" />
+                  <option value="$USER_HOME$/gradle-1.10/src/launcher" />
+                  <option value="$USER_HOME$/gradle-1.10/src/maven" />
+                  <option value="$USER_HOME$/gradle-1.10/src/messaging" />
+                  <option value="$USER_HOME$/gradle-1.10/src/native" />
+                  <option value="$USER_HOME$/gradle-1.10/src/open-api" />
+                  <option value="$USER_HOME$/gradle-1.10/src/osgi" />
+                  <option value="$USER_HOME$/gradle-1.10/src/plugins" />
+                  <option value="$USER_HOME$/gradle-1.10/src/publish" />
+                  <option value="$USER_HOME$/gradle-1.10/src/reporting" />
+                  <option value="$USER_HOME$/gradle-1.10/src/resources" />
+                  <option value="$USER_HOME$/gradle-1.10/src/scala" />
+                  <option value="$USER_HOME$/gradle-1.10/src/signing" />
+                  <option value="$USER_HOME$/gradle-1.10/src/sonar" />
+                  <option value="$USER_HOME$/gradle-1.10/src/tooling-api" />
+                  <option value="$USER_HOME$/gradle-1.10/src/ui" />
+                  <option value="$USER_HOME$/gradle-1.10/src/wrapper" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/ant-1.9.2.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/ant-launcher-1.9.2.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-base-services-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-base-services-groovy-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-cli-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-core-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-docs-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-launcher-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-messaging-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-native-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-open-api-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-resources-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-tooling-api-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-ui-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/gradle-wrapper-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/groovy-all-1.8.6.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/ant-antlr-1.9.2.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-announce-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-antlr-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-build-comparison-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-build-init-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-code-quality-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-core-impl-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-cpp-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-diagnostics-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-ear-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-ide-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-ivy-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-jacoco-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-javascript-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-jetty-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-language-base-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-language-jvm-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-maven-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-osgi-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-plugins-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-publish-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-reporting-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-scala-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-signing-1.10.jar" />
+                  <option value="$USER_HOME$/gradle-1.10/lib/plugins/gradle-sonar-1.10.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="354" />
+    <option name="y" value="176" />
+    <option name="width" value="2512" />
+    <option name="height" value="1417" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.7 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65c4af00-8348-457c-9028-2d2e13762e70" name="Default" comment="" />
+      <created>1435232640448</created>
+      <updated>1435232640448</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="354" y="176" width="2512" height="1417" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3289777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+</project>
+

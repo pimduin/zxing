@@ -1,6 +1,6 @@
 // -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-#ifndef __ZXingWidget__UPCEANExtensionSupport__
-#define __ZXingWidget__UPCEANExtensionSupport__
+#ifndef __ZXingWidget__UPCEANExtension2Reader__
+#define __ZXingWidget__UPCEANExtension2Reader__
 
 /*
  *  Copyright 2013 ZXing authors All rights reserved.
@@ -18,25 +18,29 @@
  * limitations under the License.
  */
 
-#include <vector>
+#include <string>
 #include <zxing/common/Counted.h>
+#include <zxing/common/BitArray.h>
 #include <zxing/Result.h>
-#include <zxing/oned/OneDReader.h>
-#include <zxing/oned/UPCEANExtension2Reader.h>
-#include <zxing/oned/UPCEANExtension5Reader.h>
 
 namespace zxing {
 	namespace oned {
-		class UPCEANExtensionSupport {	
+		class UPCEANExtension2Reader {
 		private:
-			UPCEANExtension2Reader extension2Reader;
-			UPCEANExtension5Reader extension5Reader;
-		protected:
-			static const std::vector<int> EXTENSION_START_PATTERN;
+			std::string decodeRowStringBuffer;
+			std::vector<int> decodeMiddleCounters;
+			
 		public:
+			UPCEANExtension2Reader();
+			
 			Ref<Result> decodeRow(int rowNumber, Ref<BitArray> row, int rangeStart, int rangeEnd);
+			int decodeMiddle(Ref<BitArray> row,
+											 int rangeStart,
+											 int rangeEnd,
+											 std::string& resultString);
 		};
 	}
 }
 
-#endif /* defined(__ZXingWidget__UPCEANExtensionSupport__) */
+
+#endif /* defined(__ZXingWidget__UPCEANExtension2Reader__) */

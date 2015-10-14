@@ -1,10 +1,11 @@
-// -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
+#ifndef __DETECTOR_RESULT_H__
+#define __DETECTOR_RESULT_H__
 
 /*
- * Copyright 20011 ZXing authors
+ *  DetectorResult.h
+ *  zxing
+ *
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +20,24 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
+#include <zxing/common/Counted.h>
+#include <zxing/common/Array.h>
+#include <zxing/common/BitMatrix.h>
+#include <zxing/ResultPoint.h>
 
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
+
+class DetectorResult : public Counted {
+private:
+  Ref<BitMatrix> bits_;
+  ArrayRef< Ref<ResultPoint> > points_;
+
+public:
+  DetectorResult(Ref<BitMatrix> bits, ArrayRef< Ref<ResultPoint> > points);
+  Ref<BitMatrix> getBits();
+  ArrayRef< Ref<ResultPoint> > getPoints();
+};
+
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif // __DETECTOR_RESULT_H__

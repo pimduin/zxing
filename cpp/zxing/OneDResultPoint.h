@@ -1,10 +1,10 @@
-// -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
-
+#ifndef __ONED_RESULT_POINT_H__
+#define __ONED_RESULT_POINT_H__
 /*
- * Copyright 20011 ZXing authors
+ *  OneDResultPoint.h
+ *  ZXing
+ *
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,17 +18,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#include <zxing/ReaderException.h>
+#include <zxing/ResultPoint.h>
+#include <cmath>
 
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
+	namespace oned {
+		
+		class OneDResultPoint : public ResultPoint {
+			
+		public:
+			OneDResultPoint(float posX, float posY);
+		};
+	}
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif

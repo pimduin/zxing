@@ -1,10 +1,12 @@
 // -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
+#ifndef __BARCODE_FORMAT_H__
+#define __BARCODE_FORMAT_H__
 
 /*
- * Copyright 20011 ZXing authors
+ *  BarcodeFormat.h
+ *  zxing
+ *
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +21,40 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
-
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
+
+class BarcodeFormat {
+public:
+  // if you update the enum, update BarcodeFormat.cpp
+
+  enum Value {
+    NONE,
+    AZTEC,
+    CODABAR,
+    CODE_39,
+    CODE_93,
+    CODE_128,
+    DATA_MATRIX,
+    EAN_8,
+    EAN_13,
+    ITF,
+    MAXICODE,
+    PDF_417,
+    QR_CODE,
+    RSS_14,
+    RSS_EXPANDED,
+    UPC_A,
+    UPC_E,
+    UPC_EAN_EXTENSION
   };
+
+  BarcodeFormat(Value v) : value(v) {}  
+  const Value value;
+  operator Value () const {return value;}
+
+  static char const* barcodeFormatNames[];
+};
+
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif // __BARCODE_FORMAT_H__

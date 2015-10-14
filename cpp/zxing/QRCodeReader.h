@@ -1,10 +1,12 @@
 // -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
+#ifndef __QR_CODE_READER_H__
+#define __QR_CODE_READER_H__
 
 /*
- * Copyright 20011 ZXing authors
+ *  QRCodeReader.h
+ *  zxing
+ *
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +21,28 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
+#include <zxing/Reader.h>
+#include <zxing/qrcode/decoder/Decoder.h>
+#include <zxing/DecodeHints.h>
 
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
+namespace qrcode {
+		
+class QRCodeReader : public Reader {
+ private:
+  Decoder decoder_;
+			
+ protected:
+  Decoder& getDecoder();
+
+ public:
+  QRCodeReader();
+  virtual ~QRCodeReader();
+			
+  Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints);
+};
+
+}
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif // __QR_CODE_READER_H__

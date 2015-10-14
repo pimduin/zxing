@@ -26,7 +26,7 @@ using namespace std;
 
 namespace zxing {
 	namespace oned {
-		UPCEANExtension2Reader::UPCEANExtension2Reader() : decodeMiddleCounters(4, 0) { }
+		UPCEANExtension2Reader::UPCEANExtension2Reader() : decodeMiddleCounters(4, 0) {	}
 		
 		Ref<Result> UPCEANExtension2Reader::decodeRow(int rowNumber, Ref<BitArray> row, int rangeStart, int rangeEnd) {
 			string& result = decodeRowStringBuffer;

@@ -1,3 +1,12 @@
 target
 .DS_Store
 
+core/build
+local.properties
+core/.gradle/1.10/taskArtifacts/cache.properties
+core/.gradle/1.10/taskArtifacts/cache.properties.lock
+core/.gradle/1.10/taskArtifacts/fileHashes.bin
+core/.gradle/1.10/taskArtifacts/fileSnapshots.bin
+core/.gradle/1.10/taskArtifacts/outputFileStates.bin
+core/.gradle/1.10/taskArtifacts/taskArtifacts.bin
+.name

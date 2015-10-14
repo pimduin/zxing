@@ -36,7 +36,9 @@ namespace zxing {
 		};
 		
 		// Methods
-		UPCEANExtension5Reader::UPCEANExtension5Reader() : decodeMiddleCounters(4, 0) { }
+		UPCEANExtension5Reader::UPCEANExtension5Reader() : decodeMiddleCounters(4, 0) {
+			std::cout << "alloc ean5" << std::endl;
+		}
 		
 		Ref<Result> UPCEANExtension5Reader::decodeRow(int rowNumber, Ref<BitArray> row, int rangeStart, int rangeEnd) {
 			string& result = decodeRowStringBuffer;

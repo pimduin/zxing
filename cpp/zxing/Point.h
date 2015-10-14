@@ -1,10 +1,11 @@
-// -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
+#ifndef __POINT_H__
+#define __POINT_H__
 
 /*
- * Copyright 20011 ZXing authors
+ *  Point.h
+ *  zxing
+ *
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +20,28 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
-
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
-}
+class PointI {
+public:
+  int x;
+  int y;
+};
 
-#endif // __CHECKSUM_EXCEPTION_H__
+class Point {
+public:
+  Point() : x(0.0f), y(0.0f) {};
+  Point(float x_, float y_) : x(x_), y(y_) {};
+
+  float x;
+  float y;
+};
+
+class Line {
+public:
+  Line(Point start_, Point end_) : start(start_), end(end_) {};
+
+  Point start;
+  Point end;
+};
+}
+#endif // POINT_H_

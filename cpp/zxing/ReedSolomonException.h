@@ -1,10 +1,11 @@
-// -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
+#ifndef __REED_SOLOMON_EXCEPTION_H__
+#define __REED_SOLOMON_EXCEPTION_H__
 
 /*
- * Copyright 20011 ZXing authors
+ *  ReedSolomonException.h
+ *  zxing
+ *
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +20,14 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
+#include <zxing/Exception.h>
 
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
+class ReedSolomonException : public Exception {
+public:
+  ReedSolomonException(const char *msg) throw();
+  ~ReedSolomonException() throw();
+};
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif // __REED_SOLOMON_EXCEPTION_H__

@@ -1,10 +1,13 @@
 // -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
 
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
+#ifndef __ALIGNMENT_PATTERN_H__
+#define __ALIGNMENT_PATTERN_H__
 
 /*
- * Copyright 20011 ZXing authors
+ *  AlignmentPattern.h
+ *  zxing
+ *
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +22,24 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
+#include <zxing/ResultPoint.h>
+#include <cmath>
 
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
+	namespace qrcode {
+		
+		class AlignmentPattern : public ResultPoint {
+		private:
+			float estimatedModuleSize_;
+			
+		public:
+			AlignmentPattern(float posX, float posY, float estimatedModuleSize);
+			bool aboutEquals(float moduleSize, float i, float j) const;
+      Ref<AlignmentPattern> combineEstimate(float i, float j,
+                                            float newModuleSize) const;
+		};
+		
+	}
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif // __ALIGNMENT_PATTERN_H__

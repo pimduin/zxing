@@ -1,10 +1,10 @@
 // -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
-
 /*
- * Copyright 20011 ZXing authors
+ *  AztecReader.h
+ *  zxing
+ *
+ *  Created by Lukas Stabe on 08/02/2012.
+ *  Copyright 2012 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +19,31 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
+#include <zxing/Reader.h>
+#include <zxing/aztec/decoder/Decoder.h>
+#include <zxing/DecodeHints.h>
+
+#ifndef ZXingWidget_AztecReader_h
+#define ZXingWidget_AztecReader_h
 
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
+namespace aztec {
+        
+class AztecReader : public Reader {
+ private:
+  Decoder decoder_;
+            
+ protected:
+  Decoder &getDecoder();
+            
+ public:
+  AztecReader();
+  virtual Ref<Result> decode(Ref<BinaryBitmap> image);
+  virtual Ref<Result> decode(Ref<BinaryBitmap> image, DecodeHints hints);
+  virtual ~AztecReader();
+};
+        
+}
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif

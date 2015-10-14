@@ -116,10 +116,10 @@ UPCEANReader::L_PATTERNS (VECTOR_INIT(L_PATTERNS_));
 const vector<int const*>
 UPCEANReader::L_AND_G_PATTERNS (VECTOR_INIT(L_AND_G_PATTERNS_));
 
-UPCEANExtensionSupport *extensionReader;
+//UPCEANExtensionSupport *extensionReader;
 
 UPCEANReader::UPCEANReader() {
-	extensionReader = new UPCEANExtensionSupport::UPCEANExtensionSupport();
+	//extensionReader = new UPCEANExtensionSupport::UPCEANExtensionSupport();
 }
 
 Ref<Result> UPCEANReader::decodeRow(int rowNumber, Ref<BitArray> row) {
@@ -158,7 +158,7 @@ Ref<Result> UPCEANReader::decodeRow(int rowNumber,
   Ref<Result> decodeResult (new Result(resultString, ArrayRef<char>(), resultPoints, format));
   // Java extension and man stuff
   try {
-		Ref<Result> extensionResult = extensionReader->decodeRow(rowNumber, row, endRange[1], row->getSize());
+		Ref<Result> extensionResult = extensionReader.decodeRow(rowNumber, row, endRange[1], row->getSize());
 		if (extensionResult) {
 			Ref<Result> newResult (new Result(decodeResult->getText(), decodeResult->getRawBytes(), decodeResult->getResultPoints(), decodeResult->getBarcodeFormat(), extensionResult));
 			return newResult;
@@ -313,8 +313,4 @@ bool UPCEANReader::checkStandardUPCEANChecksum(Ref<String> const& s_) {
     sum += digit;
   }
   return sum % 10 == 0;
-}
-
-UPCEANReader::~UPCEANReader() {
-  delete extensionReader;
 }

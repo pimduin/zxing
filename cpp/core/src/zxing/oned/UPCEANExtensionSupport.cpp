@@ -31,26 +31,17 @@ namespace zxing {
 		
 #define VECTOR_INIT(v) v, v + sizeof(v)/sizeof(v[0])
 		const vector<int> UPCEANExtensionSupport::EXTENSION_START_PATTERN(VECTOR_INIT(_EXTENSION_START_PATTERN));
-		
-		UPCEANExtension2Reader *extension2Reader;
-		UPCEANExtension5Reader *extension5Reader;
-		
-		// Methods
-		UPCEANExtensionSupport::UPCEANExtensionSupport() {
-			extension2Reader = new UPCEANExtension2Reader::UPCEANExtension2Reader();
-			extension5Reader = new UPCEANExtension5Reader::UPCEANExtension5Reader();
-		}
-		
+				
 		Ref<Result> UPCEANExtensionSupport::decodeRow(int rowNumber, Ref<BitArray> row, int rangeStart, int rangeEnd) {
 			UPCEANReader::Range startPattern = UPCEANReader::findGuardPattern(row, rangeStart, false, EXTENSION_START_PATTERN);
 			Ref<Result> extensionResult;
 			try {
-				extensionResult = extension5Reader->decodeRow(rowNumber, row, startPattern[1], row->getSize());
+				extensionResult = extension5Reader.decodeRow(rowNumber, row, startPattern[1], row->getSize());
 			} catch (NotFoundException exception) {
 			}
 			if (!extensionResult) {
 				try {
-				extensionResult = extension2Reader->decodeRow(rowNumber, row, startPattern[1], row->getSize());
+				extensionResult = extension2Reader.decodeRow(rowNumber, row, startPattern[1], row->getSize());
 				} catch (NotFoundException exception) {
 					// continue
 				}
@@ -60,11 +51,6 @@ namespace zxing {
 			} else {
 				throw NotFoundException();
 			}
-		}
-		
-		UPCEANExtensionSupport::~UPCEANExtensionSupport() {
-			delete extension2Reader;
-			delete extension5Reader;
 		}
 	}
 }

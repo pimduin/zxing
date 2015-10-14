@@ -210,6 +210,7 @@
 		3BAC3A391724313500473974 /* BigUnsignedInABase.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC3A2A1724313500473974 /* BigUnsignedInABase.cc */; };
 		3BAC3A3A1724313500473974 /* BigUnsignedInABase.hh in Headers */ = {isa = PBXBuildFile; fileRef = 3BAC3A2B1724313500473974 /* BigUnsignedInABase.hh */; };
 		3BAC3A3C1724313500473974 /* NumberlikeArray.hh in Headers */ = {isa = PBXBuildFile; fileRef = 3BAC3A2E1724313500473974 /* NumberlikeArray.hh */; };
+		3E9638611B25D87B00DE27DA /* zxing in Copy Files */ = {isa = PBXBuildFile; fileRef = 3E96385F1B25D86A00DE27DA /* zxing */; };
 		3EB27E241754EA2F00504CF6 /* UPCEANExtensionSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EB27E221754EA2F00504CF6 /* UPCEANExtensionSupport.cpp */; };
 		3EB27E251754EA2F00504CF6 /* UPCEANExtensionSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB27E231754EA2F00504CF6 /* UPCEANExtensionSupport.h */; };
 		3EB27E321754EA4F00504CF6 /* UPCEANExtension2Reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EB27E2E1754EA4E00504CF6 /* UPCEANExtension2Reader.cpp */; };
@@ -218,15 +219,29 @@
 		3EB27E351754EA4F00504CF6 /* UPCEANExtension5Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB27E311754EA4E00504CF6 /* UPCEANExtension5Reader.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3E9638601B25D87900DE27DA /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				3E9638611B25D87B00DE27DA /* zxing in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3B5A492D17091807004E112F /* ChecksumException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChecksumException.cpp; sourceTree = "<group>"; };
 		3B5A492E17091807004E112F /* ChecksumException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecksumException.h; sourceTree = "<group>"; };
-		3B5A493117091826004E112F /* CodaBarReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CodaBarReader.cpp; sourceTree = "<group>"; };
-		3B5A493217091826004E112F /* CodaBarReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaBarReader.h; sourceTree = "<group>"; };
-		3B5A493317091826004E112F /* Code93Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Code93Reader.cpp; sourceTree = "<group>"; };
-		3B5A493417091826004E112F /* Code93Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Code93Reader.h; sourceTree = "<group>"; };
+		3B5A493117091826004E112F /* CodaBarReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = CodaBarReader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B5A493217091826004E112F /* CodaBarReader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = CodaBarReader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B5A493317091826004E112F /* Code93Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Code93Reader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B5A493417091826004E112F /* Code93Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = Code93Reader.h; sourceTree = "<group>"; tabWidth = 2; };
 		3B6AA6701710C83200DF84C0 /* InvertedLuminanceSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InvertedLuminanceSource.cpp; sourceTree = "<group>"; };
-		3B83E98E158E66C600A3B31F /* libzxing-cpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libzxing-cpp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B83E98E158E66C600A3B31F /* libzxing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzxing.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B83E991158E66C600A3B31F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B83E9A4158E679000A3B31F /* AztecDetectorResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AztecDetectorResult.cpp; sourceTree = "<group>"; };
 		3B83E9A5158E679000A3B31F /* AztecDetectorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AztecDetectorResult.h; sourceTree = "<group>"; };
@@ -328,30 +343,30 @@
 		3B83EA16158E679000A3B31F /* MultiFormatReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiFormatReader.cpp; sourceTree = "<group>"; };
 		3B83EA17158E679000A3B31F /* MultiFormatReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiFormatReader.h; sourceTree = "<group>"; };
 		3B83EA19158E679000A3B31F /* NotFoundException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotFoundException.h; sourceTree = "<group>"; };
-		3B83EA1B158E679000A3B31F /* Code128Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Code128Reader.cpp; sourceTree = "<group>"; };
-		3B83EA1C158E679000A3B31F /* Code128Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Code128Reader.h; sourceTree = "<group>"; };
-		3B83EA1D158E679000A3B31F /* Code39Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Code39Reader.cpp; sourceTree = "<group>"; };
-		3B83EA1E158E679000A3B31F /* Code39Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Code39Reader.h; sourceTree = "<group>"; };
-		3B83EA1F158E679000A3B31F /* EAN13Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EAN13Reader.cpp; sourceTree = "<group>"; };
-		3B83EA20158E679000A3B31F /* EAN13Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAN13Reader.h; sourceTree = "<group>"; };
-		3B83EA21158E679000A3B31F /* EAN8Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EAN8Reader.cpp; sourceTree = "<group>"; };
-		3B83EA22158E679000A3B31F /* EAN8Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAN8Reader.h; sourceTree = "<group>"; };
-		3B83EA23158E679000A3B31F /* ITFReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ITFReader.cpp; sourceTree = "<group>"; };
-		3B83EA24158E679000A3B31F /* ITFReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFReader.h; sourceTree = "<group>"; };
-		3B83EA25158E679000A3B31F /* MultiFormatOneDReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiFormatOneDReader.cpp; sourceTree = "<group>"; };
-		3B83EA26158E679000A3B31F /* MultiFormatOneDReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiFormatOneDReader.h; sourceTree = "<group>"; };
-		3B83EA27158E679000A3B31F /* MultiFormatUPCEANReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiFormatUPCEANReader.cpp; sourceTree = "<group>"; };
-		3B83EA28158E679000A3B31F /* MultiFormatUPCEANReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiFormatUPCEANReader.h; sourceTree = "<group>"; };
-		3B83EA29158E679000A3B31F /* OneDReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OneDReader.cpp; sourceTree = "<group>"; };
+		3B83EA1B158E679000A3B31F /* Code128Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Code128Reader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA1C158E679000A3B31F /* Code128Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = Code128Reader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA1D158E679000A3B31F /* Code39Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Code39Reader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA1E158E679000A3B31F /* Code39Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = Code39Reader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA1F158E679000A3B31F /* EAN13Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = EAN13Reader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA20158E679000A3B31F /* EAN13Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = EAN13Reader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA21158E679000A3B31F /* EAN8Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = EAN8Reader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA22158E679000A3B31F /* EAN8Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = EAN8Reader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA23158E679000A3B31F /* ITFReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = ITFReader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA24158E679000A3B31F /* ITFReader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ITFReader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA25158E679000A3B31F /* MultiFormatOneDReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = MultiFormatOneDReader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA26158E679000A3B31F /* MultiFormatOneDReader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MultiFormatOneDReader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA27158E679000A3B31F /* MultiFormatUPCEANReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = MultiFormatUPCEANReader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA28158E679000A3B31F /* MultiFormatUPCEANReader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MultiFormatUPCEANReader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA29158E679000A3B31F /* OneDReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = OneDReader.cpp; sourceTree = "<group>"; tabWidth = 2; };
 		3B83EA2A158E679000A3B31F /* OneDReader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = OneDReader.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
-		3B83EA2B158E679000A3B31F /* OneDResultPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OneDResultPoint.cpp; sourceTree = "<group>"; };
-		3B83EA2C158E679000A3B31F /* OneDResultPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDResultPoint.h; sourceTree = "<group>"; };
-		3B83EA2D158E679000A3B31F /* UPCAReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UPCAReader.cpp; sourceTree = "<group>"; };
-		3B83EA2E158E679000A3B31F /* UPCAReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCAReader.h; sourceTree = "<group>"; };
+		3B83EA2B158E679000A3B31F /* OneDResultPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = OneDResultPoint.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA2C158E679000A3B31F /* OneDResultPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = OneDResultPoint.h; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA2D158E679000A3B31F /* UPCAReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = UPCAReader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA2E158E679000A3B31F /* UPCAReader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = UPCAReader.h; sourceTree = "<group>"; tabWidth = 2; };
 		3B83EA2F158E679000A3B31F /* UPCEANReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEANReader.cpp; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		3B83EA30158E679000A3B31F /* UPCEANReader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = UPCEANReader.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
-		3B83EA31158E679000A3B31F /* UPCEReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEReader.cpp; sourceTree = "<group>"; };
-		3B83EA32158E679000A3B31F /* UPCEReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCEReader.h; sourceTree = "<group>"; };
+		3B83EA31158E679000A3B31F /* UPCEReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEReader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3B83EA32158E679000A3B31F /* UPCEReader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = UPCEReader.h; sourceTree = "<group>"; tabWidth = 2; };
 		3B83EA35158E679000A3B31F /* BitMatrixParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitMatrixParser.cpp; sourceTree = "<group>"; };
 		3B83EA36158E679000A3B31F /* BitMatrixParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitMatrixParser.h; sourceTree = "<group>"; };
 		3B83EA37158E679000A3B31F /* DataBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataBlock.cpp; sourceTree = "<group>"; };
@@ -427,12 +442,15 @@
 		3BC3D6A6158E8F790037CE30 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		3BC3D6A9158E8F790037CE30 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3BC3D6AB158E8F790037CE30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3EB27E221754EA2F00504CF6 /* UPCEANExtensionSupport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEANExtensionSupport.cpp; sourceTree = "<group>"; };
-		3EB27E231754EA2F00504CF6 /* UPCEANExtensionSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCEANExtensionSupport.h; sourceTree = "<group>"; };
-		3EB27E2E1754EA4E00504CF6 /* UPCEANExtension2Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEANExtension2Reader.cpp; sourceTree = "<group>"; };
-		3EB27E2F1754EA4E00504CF6 /* UPCEANExtension2Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCEANExtension2Reader.h; sourceTree = "<group>"; };
-		3EB27E301754EA4E00504CF6 /* UPCEANExtension5Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEANExtension5Reader.cpp; sourceTree = "<group>"; };
-		3EB27E311754EA4E00504CF6 /* UPCEANExtension5Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCEANExtension5Reader.h; sourceTree = "<group>"; };
+		3E25C1E91B25DC4A00CF04D9 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3E25C1F11B25DD3900CF04D9 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		3E96385F1B25D86A00DE27DA /* zxing */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zxing; path = core/src/zxing; sourceTree = "<group>"; };
+		3EB27E221754EA2F00504CF6 /* UPCEANExtensionSupport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEANExtensionSupport.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3EB27E231754EA2F00504CF6 /* UPCEANExtensionSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = UPCEANExtensionSupport.h; sourceTree = "<group>"; tabWidth = 2; };
+		3EB27E2E1754EA4E00504CF6 /* UPCEANExtension2Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEANExtension2Reader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3EB27E2F1754EA4E00504CF6 /* UPCEANExtension2Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = UPCEANExtension2Reader.h; sourceTree = "<group>"; tabWidth = 2; };
+		3EB27E301754EA4E00504CF6 /* UPCEANExtension5Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = UPCEANExtension5Reader.cpp; sourceTree = "<group>"; tabWidth = 2; };
+		3EB27E311754EA4E00504CF6 /* UPCEANExtension5Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = UPCEANExtension5Reader.h; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,13 +472,14 @@
 				3B83E9A2158E679000A3B31F /* zxing */,
 				3B83E990158E66C600A3B31F /* Frameworks */,
 				3B83E98F158E66C600A3B31F /* Products */,
+				3E96385F1B25D86A00DE27DA /* zxing */,
 			);
 			sourceTree = "<group>";
 		};
 		3B83E98F158E66C600A3B31F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B83E98E158E66C600A3B31F /* libzxing-cpp.a */,
+				3B83E98E158E66C600A3B31F /* libzxing.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -468,6 +487,8 @@
 		3B83E990158E66C600A3B31F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E25C1F11B25DD3900CF04D9 /* libstdc++.dylib */,
+				3E25C1E91B25DC4A00CF04D9 /* libc++.dylib */,
 				3B83E991158E66C600A3B31F /* Foundation.framework */,
 				3BC3D6A6158E8F790037CE30 /* Cocoa.framework */,
 				3BC3D6A8158E8F790037CE30 /* Other Frameworks */,
@@ -994,6 +1015,7 @@
 			buildConfigurationList = 3B83E99B158E66C600A3B31F /* Build configuration list for PBXNativeTarget "zxing-cpp" */;
 			buildPhases = (
 				3B83E98A158E66C600A3B31F /* Sources */,
+				3E9638601B25D87900DE27DA /* Copy Files */,
 				3B83E98B158E66C600A3B31F /* Frameworks */,
 				3B83E98C158E66C600A3B31F /* Headers */,
 			);
@@ -1003,7 +1025,7 @@
 			);
 			name = "zxing-cpp";
 			productName = "zxing-cpp";
-			productReference = 3B83E98E158E66C600A3B31F /* libzxing-cpp.a */;
+			productReference = 3B83E98E158E66C600A3B31F /* libzxing.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -1146,13 +1168,8 @@
 		3B83E999158E66C600A3B31F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					x86_64,
-					i386,
-					armv7s,
-					armv7,
-				);
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -1167,19 +1184,16 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = core/src;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
-				VALID_ARCHS = "armv7 armv7s i386 x86_64";
-				"VALID_ARCHS[sdk=iphoneos*]" = "armv7 armv7s";
-				"VALID_ARCHS[sdk=iphonesimulator*]" = i386;
-				"VALID_ARCHS[sdk=macosx*]" = "i386 x86_64";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -1187,34 +1201,28 @@
 		3B83E99A158E66C600A3B31F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					x86_64,
-					i386,
-					armv7s,
-					armv7,
-				);
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "_DEBUG=1";
 				GCC_THUMB_SUPPORT = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = core/src;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
-				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv7 armv7s i386 x86_64";
-				"VALID_ARCHS[sdk=iphoneos*]" = "armv7 armv7s";
-				"VALID_ARCHS[sdk=iphonesimulator*]" = i386;
-				"VALID_ARCHS[sdk=macosx*]" = "i386 x86_64";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
@@ -1228,7 +1236,8 @@
 				GCC_PREFIX_HEADER = "";
 				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = zxing;
+				PUBLIC_HEADERS_FOLDER_PATH = include/zxing;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1242,7 +1251,8 @@
 				GCC_PREFIX_HEADER = "";
 				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = zxing;
+				PUBLIC_HEADERS_FOLDER_PATH = include/zxing;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

@@ -1,6 +1,6 @@
 // -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-#ifndef __ZXingWidget__UPCEANExtensionSupport__
-#define __ZXingWidget__UPCEANExtensionSupport__
+#ifndef __ZXingWidget__UPCEANExtension5Reader__
+#define __ZXingWidget__UPCEANExtension5Reader__
 
 /*
  *  Copyright 2013 ZXing authors All rights reserved.
@@ -18,25 +18,34 @@
  * limitations under the License.
  */
 
+#include <string>
 #include <vector>
 #include <zxing/common/Counted.h>
+#include <zxing/common/BitArray.h>
 #include <zxing/Result.h>
-#include <zxing/oned/OneDReader.h>
-#include <zxing/oned/UPCEANExtension2Reader.h>
-#include <zxing/oned/UPCEANExtension5Reader.h>
 
 namespace zxing {
 	namespace oned {
-		class UPCEANExtensionSupport {	
+		class UPCEANExtension5Reader {
 		private:
-			UPCEANExtension2Reader extension2Reader;
-			UPCEANExtension5Reader extension5Reader;
-		protected:
-			static const std::vector<int> EXTENSION_START_PATTERN;
+			std::string decodeRowStringBuffer;
+			std::vector<int> decodeMiddleCounters;
+			
 		public:
-			Ref<Result> decodeRow(int rowNumber, Ref<BitArray> row, int rangeStart, int rangeEnd);
+			UPCEANExtension5Reader();
+			
+			Ref<Result> decodeRow(int rowNumber,
+														Ref<BitArray> row,
+														int rangeStart,
+														int rangeEnd);
+			int decodeMiddle(Ref<BitArray> row,
+											 int rangeStart,
+											 int rangeEnd,
+											 std::string& resultString);
+			static int determineCheckDigit(int lgPatternFound);
+			static int extensionChecksum(std::string s);
 		};
 	}
 }
 
-#endif /* defined(__ZXingWidget__UPCEANExtensionSupport__) */
+#endif /* defined(__ZXingWidget__UPCEANExtension5Reader__) */

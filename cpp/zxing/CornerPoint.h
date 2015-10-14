@@ -1,10 +1,12 @@
-// -*- mode:c++; tab-width:2; indent-tabs-mode:nil; c-basic-offset:2 -*-
-
-#ifndef __CHECKSUM_EXCEPTION_H__
-#define __CHECKSUM_EXCEPTION_H__
+#ifndef __CORNER_FINDER_H__
+#define __CORNER_FINDER_H__
 
 /*
- * Copyright 20011 ZXing authors
+ *  CornerPoint.h
+ *  zxing
+ *
+ *  Created by Luiz Silva on 09/02/2010.
+ *  Copyright 2010 ZXing authors All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,16 +21,23 @@
  * limitations under the License.
  */
 
-#include <zxing/ReaderException.h>
+#include <zxing/ResultPoint.h>
+#include <cmath>
 
 namespace zxing {
-  class ChecksumException : public ReaderException {
-    typedef ReaderException Base;
-  public:
-    ChecksumException() throw();
-    ChecksumException(const char *msg) throw();
-    ~ChecksumException() throw();
-  };
+	namespace datamatrix {
+			
+		class CornerPoint : public ResultPoint {
+		private:
+			int counter_;
+			
+		public:
+			CornerPoint(float posX, float posY);
+			int getCount() const;
+			void incrementCount();
+			bool equals(Ref<CornerPoint> other) const;
+		};
+	}
 }
 
-#endif // __CHECKSUM_EXCEPTION_H__
+#endif // __CORNER_FINDER_H__
