@@ -40,6 +40,13 @@ final class UPCEANExtension2Support {
     result.setLength(0);
     int end = decodeMiddle(row, extensionStartRange, result);
 
+    int quietLength = extensionStartRange[1] - extensionStartRange[0];
+    int quietEnd = end + quietLength;
+    // Check for trailing quiet area, size as least as big as start guard pattern
+    if (quietEnd >= row.getSize() || !row.isRange(end, quietEnd, false)) {
+      throw NotFoundException.getNotFoundInstance();
+    }
+
     String resultString = result.toString();
     Map<ResultMetadataType,Object> extensionData = parseExtensionString(resultString);
 
@@ -91,7 +98,7 @@ final class UPCEANExtension2Support {
     if (Integer.parseInt(resultString.toString()) % 4 != checkParity) {
       throw NotFoundException.getNotFoundInstance();
     }
-    
+
     return rowOffset;
   }
 
