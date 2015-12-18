@@ -1169,7 +1169,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+					i386,
+				);
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -1193,7 +1197,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -1202,7 +1206,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+					i386,
+				);
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -1222,7 +1230,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				VALIDATE_PRODUCT = NO;
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
@@ -1231,6 +1239,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALTERNATE_PERMISSIONS_FILES = "";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/zxing_cpp.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -1239,6 +1248,7 @@
 				PRODUCT_NAME = zxing;
 				PUBLIC_HEADERS_FOLDER_PATH = include/zxing;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
 			};
 			name = Debug;
 		};
@@ -1246,6 +1256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALTERNATE_PERMISSIONS_FILES = "";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/zxing_cpp.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -1254,6 +1265,7 @@
 				PRODUCT_NAME = zxing;
 				PUBLIC_HEADERS_FOLDER_PATH = include/zxing;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
 			};
 			name = Release;
 		};
